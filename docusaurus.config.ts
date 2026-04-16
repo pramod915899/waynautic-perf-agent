@@ -13,17 +13,18 @@ const config: Config = {
   },
 
   url: 'https://pramod915899.github.io',
-  baseUrl: '/Perf-Agent-Doc/',
+  baseUrl: '/waynautic-perf-agent/',
 
   organizationName: 'pramod915899',
-  projectName: 'Perf-Agent-Doc',
+  projectName: 'waynautic-perf-agent',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
+  trailingSlash: true,
 
   markdown: {
     hooks: {
+      onBrokenMarkdownLinks: 'warn',
       onBrokenMarkdownImages: 'warn',
     },
   },
@@ -56,7 +57,7 @@ const config: Config = {
 
   // ── Image Lightbox Script ─────────────────────────────────────────────────
   scripts: [
-    '/Perf-Agent-Doc/js/imageExpand.js',
+    '/waynautic-perf-agent/js/imageExpand.js',
   ],
 
   presets: [
