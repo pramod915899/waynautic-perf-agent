@@ -12,19 +12,18 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://pramod915899.github.io',
-  baseUrl: '/waynautic-perf-agent/',
+  url: 'https://pramod915899.github.io',   // ← Replace with your GitHub username
+  baseUrl: '/Waynautic-Perf-Agent/',
 
-  organizationName: 'pramod915899',
-  projectName: 'waynautic-perf-agent',
+  organizationName: 'pramod915899',         // ← Replace with your GitHub username
+  projectName: 'Waynautic-Perf-Agent',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'ignore',
-  trailingSlash: true,
+  onBrokenMarkdownLinks: 'warn',
 
   markdown: {
     hooks: {
-      onBrokenMarkdownLinks: 'warn',
       onBrokenMarkdownImages: 'warn',
     },
   },
@@ -57,7 +56,7 @@ const config: Config = {
 
   // ── Image Lightbox Script ─────────────────────────────────────────────────
   scripts: [
-    '/waynautic-perf-agent/js/imageExpand.js',
+    '/Perf-Agent-Doc/js/imageExpand.js',
   ],
 
   presets: [
@@ -107,7 +106,7 @@ const config: Config = {
         },
         {
           href: 'https://app.perf-agent.waynautic.com/', // ← Replace with actual Perf Agent platform URL
-          label: 'Perf Agent Platform',
+          label: 'Perf Agent Platformmmm',
           position: 'right',
         },
         {
@@ -124,13 +123,13 @@ const config: Config = {
           title: 'Platform',
           items: [
             { label: 'Introduction', to: '/' },
-            { label: 'Settings', to: '/settings/settings' },
+            { label: 'Settings', to: '/settings' },
           ],
         },
         {
           title: 'Auto Script',
           items: [
-            { label: 'Auto Script', to: '/auto-script/auto-script' },
+            { label: 'Auto Script', to: '/auto-script' },
           ],
         },
         // Uncomment as each component's docs go live:
