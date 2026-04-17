@@ -106,7 +106,7 @@ const config: Config = {
         },
         {
           href: 'https://app.perf-agent.waynautic.com/', // ← Replace with actual Perf Agent platform URL
-          label: 'Perf Agent Platformmmm',
+          label: 'Perf Agent Platform',
           position: 'right',
         },
         {
