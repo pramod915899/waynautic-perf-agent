@@ -12,11 +12,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://pramod915899.github.io',   // ← Replace with your GitHub username
-  baseUrl: '/Waynautic-Perf-Agent/',
+  url: 'https://example.com',   // ← Replace with your GitHub username
+  baseUrl: '/',
 
-  organizationName: 'pramod915899',         // ← Replace with your GitHub username
-  projectName: 'Waynautic-Perf-Agent',
+  organizationName: 'your-github-username',         // ← Replace with your GitHub username
+  projectName: 'Perf-Agent-Doc',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'ignore',
@@ -24,7 +24,7 @@ const config: Config = {
 
   markdown: {
     hooks: {
-      onBrokenMarkdownImages: 'warn',
+      onBrokenMarkdownLinks: 'warn',
     },
   },
 
@@ -34,8 +34,6 @@ const config: Config = {
   },
 
   // ── Search Plugin ─────────────────────────────────────────────────────────
-  // Uses @easyops-cn/docusaurus-search-local (works in both dev and prod).
-  // Exact-phrase match mode: no stemming, no stop-word filtering.
   plugins: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
@@ -82,7 +80,6 @@ const config: Config = {
   themeConfig: {
     image: 'img/logo.svg',
 
-    // ── Light-only mode (matches Exgenix) ──────────────────────────────────
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,
@@ -105,7 +102,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://app.perf-agent.waynautic.com/', // ← Replace with actual Perf Agent platform URL
+          href: 'http://122.173.132.55:3002/ai-perf-agent',
           label: 'Perf Agent Platform',
           position: 'right',
         },
@@ -132,19 +129,24 @@ const config: Config = {
             { label: 'Auto Script', to: '/auto-script' },
           ],
         },
-        // Uncomment as each component's docs go live:
-        // {
-        //   title: 'Auto Analysis',
-        //   items: [
-        //     { label: 'Overview', to: '/auto-analysis/overview' },
-        //   ],
-        // },
-        // {
-        //   title: 'NFR Strategy Hub',
-        //   items: [
-        //     { label: 'Overview', to: '/nfr/overview' },
-        //   ],
-        // },
+        {
+          title: 'Auto Analysis',
+          items: [
+            { label: 'Auto Analysis', to: '/auto-analysis' },
+          ],
+        },
+        {
+          title: 'NFR Strategy Hub',
+          items: [
+            { label: 'NFR Strategy Hub', to: '/auto-nfr' },
+          ],
+        },
+        {
+          title: 'AI Chatbot',
+          items: [
+            { label: 'AI Chatbot', to: '/chatbot' },
+          ],
+        },
       ],
       copyright: `© ${new Date().getFullYear()} Waynautic / EXG. All rights reserved.`,
     },
